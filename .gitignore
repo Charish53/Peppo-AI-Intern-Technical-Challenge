@@ -1,0 +1,96 @@
+# Node.js General Ignores
+backend/node_modules/
+frontend/node_modules/
+npm-debug.log
+yarn-error.log
+*.log
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# OS/Editor Files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.sublime-*
+*.swp
+*~
+
+# Build/Output Directories
+/dist
+/build
+/out
+/.next  # If using Next.js, but safe to include
+
+# Dependency Directories (already covered by node_modules, but explicit)
+frontend/node_modules/
+backend/node_modules/
+
+# Vite-Specific (for frontend)
+vite.config.js.timestamp-*
+vite.config.ts.timestamp-*
+.vite/
+frontend/dist/
+frontend/.vite/
+
+# ESLint/Prettier Cache
+.eslintcache
+.prettierrc
+
+# Testing/Coverage
+coverage/
+*.lcov
+
+# Parcel/Webpack (if applicable)
+.parcel-cache
+.cache
+
+# Yarn
+.yarn/*
+!.yarn/cache
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+yarn.lock  # Optional: If not using Yarn, ignore; otherwise keep for reproducibility
+
+# Package Manager Locks (keep package-lock.json for npm, but ignore if conflicting)
+# package-lock.json  # Uncomment if you want to ignore it
+
+# Database/Env Secrets
+*.sql
+*.dump
+
+# Temp Files
+tmp/
+temp/
+
+# Production Builds
+*.prod.js
+*.min.js  # Unless part of source
+
+# macOS
+.Apple*
+Icon?
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Linux
+*~
+
+# Ignore Git itself in subdirs if any
+.git/
+
+# Project-Specific (add any custom ones here, e.g., if you have logs or temp folders)
+backend/logs/
+frontend/temp/
+
+# Don't ignore .gitignore itself!
+!.gitignore
