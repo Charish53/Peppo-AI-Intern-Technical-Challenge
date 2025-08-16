@@ -365,7 +365,7 @@ When reporting issues, please include:
 
 ## 📞 Contact
 
-- **Project Maintainer**: [Your Name/Team]
+- **Project Maintainer**: REDDIPALLI SAI CHARISH
 - **Email**: [charish230@gmail.com]
 - **GitHub**: [https://github.com/Charish53]
 - **Project URL**: [https://peppo-ai-intern-technical-challenge.vercel.app/]
