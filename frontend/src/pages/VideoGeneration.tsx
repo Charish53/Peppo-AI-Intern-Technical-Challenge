@@ -207,7 +207,7 @@ const VideoGeneration: React.FC = () => {
 
     try {
       // Call backend API to cancel generation
-      const response = await fetch(`${import.meta.env.VITE_API_URL || 'http://localhost:5000'}/api/video-generation/cancel/${currentGeneration.generation_id}`, {
+      const response = await fetch(`http://localhost:5000/api/video-generation/cancel/${currentGeneration.generation_id}`, {
         method: 'POST'
       });
 
