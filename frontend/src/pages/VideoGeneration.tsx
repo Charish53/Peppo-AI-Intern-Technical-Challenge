@@ -109,7 +109,7 @@ const VideoGeneration: React.FC = () => {
 
     try {
       // Call backend API (which has the RunwayML API key)
-      const response = await fetch('http://localhost:5000/api/video-generation/generate', {
+      const response = await fetch(`${import.meta.env.VITE_API_URL || 'http://localhost:5000'}/api/video-generation/generate`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
@@ -171,7 +171,7 @@ const VideoGeneration: React.FC = () => {
     const pollInterval = setInterval(async () => {
       try {
         // Call backend API to check status
-        const response = await fetch(`http://localhost:5000/api/video-generation/status/${generationId}`);
+        const response = await fetch(`${import.meta.env.VITE_API_URL || 'http://localhost:5000'}/api/video-generation/status/${generationId}`);
 
         if (response.ok) {
           const status = await response.json();
@@ -207,7 +207,7 @@ const VideoGeneration: React.FC = () => {
 
     try {
       // Call backend API to cancel generation
-      const response = await fetch(`http://localhost:5000/api/video-generation/cancel/${currentGeneration.generation_id}`, {
+      const response = await fetch(`${import.meta.env.VITE_API_URL || 'http://localhost:5000'}/api/video-generation/cancel/${currentGeneration.generation_id}`, {
         method: 'POST'
       });
 
